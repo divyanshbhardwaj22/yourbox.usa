@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(220, 220, 220);
+}
+
+.wrapper {
+    width: 450px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.backimg {
+    background-image: url('yourbox background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 3.5rem;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.company-name {
+    font-size: 18px;
+    margin: 8px 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.social-icons a {
+    color: rgb(233, 33, 99);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.insta {
+    width: 40%;
+    margin-top: 0.2rem;
+}
+.youtube {
+    width: 55%;
+}
+
+.description {
+    font-size: 13px;
+    margin: 8px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 8px 0;
+}
+
+.shop-my-looks {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.shop-my-looks h2 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.shop-my-looks p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 20px;
+    width: 320px;
+    margin: 0 auto 0 1.5rem;
+}
+
+.nav-item {
+    margin-right: .1rem;
+    display: flex;
+    align-items: center;
+    padding: 3px 6px;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: #fff;
+    transition: background 0.3s, color 0.3s, padding 0.3s, font-size 0.3s; /* Added padding and font-size transitions */
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background: #f0f0f0;
+}
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+.allpost {
+    background-color: rgb(233, 33, 99);
+    color: white;
+}
+
+.allpost:hover {
+    background-color: rgb(210, 30, 89);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.product-img {
+    width: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 2px; /* Reduced padding for navbar */
+    }
+
+    .nav-item {
+        padding: 2px 4px; /* Reduced padding for nav items */
+        font-size: 10px; /* Reduced font size */
+    }
+
+    .nav-icon {
+        width: 12px; /* Reduced icon size */
+        height: 12px; /* Reduced icon size */
+        margin-right: 2px; /* Adjusted margin */
+    }
+}
